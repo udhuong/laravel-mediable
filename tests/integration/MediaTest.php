@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
-use Plank\Mediable\Exceptions\MediaMoveException;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Exceptions\MediaMoveException;
+use UdHuong\Mediable\Media;
 
 class MediaTest extends TestCase
 {

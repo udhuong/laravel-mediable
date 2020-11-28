@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\UrlGenerators;
+namespace UdHuong\Mediable\UrlGenerators;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Filesystem\Cloud;

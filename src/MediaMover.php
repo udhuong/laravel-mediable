@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable;
+namespace UdHuong\Mediable;
 
 use Illuminate\Filesystem\FilesystemManager;
-use Plank\Mediable\Exceptions\MediaMoveException;
+use UdHuong\Mediable\Exceptions\MediaMoveException;
 
 /**
  * Media Mover Class.

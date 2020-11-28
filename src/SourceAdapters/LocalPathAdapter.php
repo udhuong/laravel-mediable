@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\SourceAdapters;
+namespace UdHuong\Mediable\SourceAdapters;
 
-use Plank\Mediable\Helpers\File;
+use UdHuong\Mediable\Helpers\File;
 
 /**
  * Local Path Adapter.

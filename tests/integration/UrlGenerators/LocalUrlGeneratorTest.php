@@ -2,8 +2,8 @@
 
 use Illuminate\Filesystem\FilesystemManager;
 use Illuminate\Support\Facades\Storage;
-use Plank\Mediable\Media;
-use Plank\Mediable\UrlGenerators\LocalUrlGenerator;
+use UdHuong\Mediable\Media;
+use UdHuong\Mediable\UrlGenerators\LocalUrlGenerator;
 
 class LocalUrlGeneratorTest extends TestCase
 {

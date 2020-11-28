@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Commands;
+namespace UdHuong\Mediable\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Filesystem\FilesystemManager;
-use Plank\Mediable\Exceptions\MediaUploadException;
-use Plank\Mediable\Helpers\File;
-use Plank\Mediable\Media;
-use Plank\Mediable\MediaUploader;
+use UdHuong\Mediable\Exceptions\MediaUploadException;
+use UdHuong\Mediable\Helpers\File;
+use UdHuong\Mediable\Media;
+use UdHuong\Mediable\MediaUploader;
 
 /**
  * Import Media Artisan Command.
@@ -149,7 +149,7 @@ class ImportMediaCommand extends Command
 
     /**
      * Update an existing media record.
-     * @param  \Plank\Mediable\Media $media
+     * @param  \UdHuong\Mediable\Media $media
      * @param  string $path
      * @return void
      */

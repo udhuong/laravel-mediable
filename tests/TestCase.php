@@ -3,7 +3,7 @@
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Filesystem\Filesystem;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Media;
 
 class TestCase extends BaseTestCase
 {
@@ -18,14 +18,14 @@ class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            Plank\Mediable\MediableServiceProvider::class
+            UdHuong\Mediable\MediableServiceProvider::class
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'MediaUploader' => 'Plank\Mediable\MediaUploaderFacade',
+            'MediaUploader' => 'UdHuong\Mediable\MediaUploaderFacade',
         ];
     }
 

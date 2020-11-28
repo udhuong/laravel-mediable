@@ -1,7 +1,7 @@
 <?php
 
-use Plank\Mediable\Media;
-use Plank\Mediable\MediableCollection;
+use UdHuong\Mediable\Media;
+use UdHuong\Mediable\MediableCollection;
 
 class MediableCollectionTest extends TestCase
 {

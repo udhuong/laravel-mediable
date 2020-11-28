@@ -1,14 +1,14 @@
 <?php
 
-use Plank\Mediable\SourceAdapters\FileAdapter;
-use Plank\Mediable\SourceAdapters\LocalPathAdapter;
-use Plank\Mediable\SourceAdapters\RawContentAdapter;
-use Plank\Mediable\SourceAdapters\RemoteUrlAdapter;
-use Plank\Mediable\SourceAdapters\SourceAdapterInterface;
-use Plank\Mediable\SourceAdapters\StreamAdapter;
-use Plank\Mediable\SourceAdapters\StreamResourceAdapter;
-use Plank\Mediable\SourceAdapters\UploadedFileAdapter;
-use Plank\Mediable\Stream;
+use UdHuong\Mediable\SourceAdapters\FileAdapter;
+use UdHuong\Mediable\SourceAdapters\LocalPathAdapter;
+use UdHuong\Mediable\SourceAdapters\RawContentAdapter;
+use UdHuong\Mediable\SourceAdapters\RemoteUrlAdapter;
+use UdHuong\Mediable\SourceAdapters\SourceAdapterInterface;
+use UdHuong\Mediable\SourceAdapters\StreamAdapter;
+use UdHuong\Mediable\SourceAdapters\StreamResourceAdapter;
+use UdHuong\Mediable\SourceAdapters\UploadedFileAdapter;
+use UdHuong\Mediable\Stream;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

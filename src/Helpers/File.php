@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Helpers;
+namespace UdHuong\Mediable\Helpers;
 
 use Symfony\Component\HttpFoundation\File\MimeType\ExtensionGuesser;
 use Symfony\Component\Mime\MimeTypes;

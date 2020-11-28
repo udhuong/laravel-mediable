@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Filesystem\FilesystemManager;
-use Plank\Mediable\Media;
-use Plank\Mediable\UrlGenerators\S3UrlGenerator;
+use UdHuong\Mediable\Media;
+use UdHuong\Mediable\UrlGenerators\S3UrlGenerator;
 
 class S3UrlGeneratorTest extends TestCase
 {

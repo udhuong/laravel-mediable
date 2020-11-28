@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\UrlGenerators;
+namespace UdHuong\Mediable\UrlGenerators;
 
 use Illuminate\Contracts\Config\Repository as Config;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Media;
 
 abstract class BaseUrlGenerator implements UrlGeneratorInterface
 {
@@ -16,7 +16,7 @@ abstract class BaseUrlGenerator implements UrlGeneratorInterface
 
     /**
      * Media instance being linked.
-     * @var \Plank\Mediable\Media
+     * @var \UdHuong\Mediable\Media
      */
     protected $media;
 
@@ -31,7 +31,7 @@ abstract class BaseUrlGenerator implements UrlGeneratorInterface
 
     /**
      * Set the media being operated on.
-     * @param \Plank\Mediable\Media $media
+     * @param \UdHuong\Mediable\Media $media
      */
     public function setMedia(Media $media): void
     {

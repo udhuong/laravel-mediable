@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable;
+namespace UdHuong\Mediable;
 
 use Closure;
 use Illuminate\Database\Eloquent\Builder;

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Commands;
+namespace UdHuong\Mediable\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\FilesystemManager;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Media;
 
 /**
  * Prune Media Artisan Command.

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\SourceAdapters;
+namespace UdHuong\Mediable\SourceAdapters;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

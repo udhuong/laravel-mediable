@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable;
+namespace UdHuong\Mediable;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -321,7 +321,7 @@ trait Mediable
      * Shorthand for retrieving the first attached media item.
      * @param  string|string[] $tags
      * @param  bool $matchAll
-     * @see \Plank\Mediable\Mediable::getMedia()
+     * @see \UdHuong\Mediable\Mediable::getMedia()
      * @return Media|null
      */
     public function firstMedia($tags, bool $matchAll = false): ?Media
@@ -333,7 +333,7 @@ trait Mediable
      * Shorthand for retrieving the last attached media item.
      * @param  string|string[] $tags
      * @param  bool $matchAll
-     * @see \Plank\Mediable\Mediable::getMedia()
+     * @see \UdHuong\Mediable\Mediable::getMedia()
      * @return Media|null
      */
     public function lastMedia($tags, $matchAll = false): ?Media

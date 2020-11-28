@@ -1,6 +1,6 @@
 <?php
 
-$factory->define(Plank\Mediable\Media::class, function (Faker\Generator $faker) {
+$factory->define(UdHuong\Mediable\Media::class, function (Faker\Generator $faker) {
     $types = config('mediable.aggregate_types');
     $type = $faker->randomElement(array_keys($types));
 

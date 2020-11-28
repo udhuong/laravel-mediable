@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable;
+namespace UdHuong\Mediable;
 
 use Exception;
-use Plank\Mediable\Exceptions\MediaUpload\FileExistsException;
-use Plank\Mediable\Exceptions\MediaUpload\FileNotFoundException;
-use Plank\Mediable\Exceptions\MediaUpload\FileNotSupportedException;
-use Plank\Mediable\Exceptions\MediaUpload\FileSizeException;
-use Plank\Mediable\Exceptions\MediaUpload\ForbiddenException;
-use Plank\Mediable\Exceptions\MediaUploadException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileExistsException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileNotFoundException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileNotSupportedException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileSizeException;
+use UdHuong\Mediable\Exceptions\MediaUpload\ForbiddenException;
+use UdHuong\Mediable\Exceptions\MediaUploadException;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 

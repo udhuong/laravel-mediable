@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\UrlGenerators;
+namespace UdHuong\Mediable\UrlGenerators;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\Filesystem\Cloud;
@@ -36,7 +36,7 @@ class LocalUrlGenerator extends BaseUrlGenerator
 
     /**
      * {@inheritdoc}
-     * @throws \Plank\Mediable\Exceptions\MediaUrlException If media's disk is not publicly accessible
+     * @throws \UdHuong\Mediable\Exceptions\MediaUrlException If media's disk is not publicly accessible
      */
     public function getUrl(): string
     {

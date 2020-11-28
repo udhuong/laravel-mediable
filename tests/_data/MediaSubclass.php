@@ -1,6 +1,6 @@
 <?php
 
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Media;
 
 class MediaSubclass extends Media
 {

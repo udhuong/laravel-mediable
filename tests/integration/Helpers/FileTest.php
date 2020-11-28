@@ -1,6 +1,6 @@
 <?php
 
-use Plank\Mediable\Helpers\File;
+use UdHuong\Mediable\Helpers\File;
 
 class FileTest extends TestCase
 {

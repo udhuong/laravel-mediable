@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Exceptions;
+namespace UdHuong\Mediable\Exceptions;
 
 use Exception;
 
@@ -17,6 +17,6 @@ class MediaUrlException extends Exception
 
     public static function invalidGenerator(string $class): self
     {
-        return new static("Could not set UrlGenerator, class `{$class}` does not extend `Plank\Mediable\UrlGenerators\UrlGenerator`");
+        return new static("Could not set UrlGenerator, class `{$class}` does not extend `UdHuong\Mediable\UrlGenerators\UrlGenerator`");
     }
 }

@@ -1,11 +1,11 @@
 <?php
 
-use Plank\Mediable\Exceptions\MediaUpload\ConfigurationException;
-use Plank\Mediable\Exceptions\MediaUpload\FileExistsException;
-use Plank\Mediable\Exceptions\MediaUpload\FileNotFoundException;
-use Plank\Mediable\Exceptions\MediaUpload\FileNotSupportedException;
-use Plank\Mediable\Exceptions\MediaUpload\FileSizeException;
-use Plank\Mediable\Exceptions\MediaUpload\ForbiddenException;
+use UdHuong\Mediable\Exceptions\MediaUpload\ConfigurationException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileExistsException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileNotFoundException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileNotSupportedException;
+use UdHuong\Mediable\Exceptions\MediaUpload\FileSizeException;
+use UdHuong\Mediable\Exceptions\MediaUpload\ForbiddenException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class HandlesMediaExceptionsTest extends TestCase

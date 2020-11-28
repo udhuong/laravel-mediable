@@ -1,8 +1,8 @@
 <?php
 
-use Plank\Mediable\Exceptions\MediaUpload\ConfigurationException;
-use Plank\Mediable\SourceAdapters\SourceAdapterFactory;
-use Plank\Mediable\SourceAdapters\SourceAdapterInterface;
+use UdHuong\Mediable\Exceptions\MediaUpload\ConfigurationException;
+use UdHuong\Mediable\SourceAdapters\SourceAdapterFactory;
+use UdHuong\Mediable\SourceAdapters\SourceAdapterInterface;
 
 class SourceAdapterFactoryTest extends TestCase
 {

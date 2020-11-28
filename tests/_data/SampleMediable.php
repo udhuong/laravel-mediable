@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Eloquent\Model;
-use Plank\Mediable\Mediable;
+use UdHuong\Mediable\Mediable;
 
 class SampleMediable extends Model
 {

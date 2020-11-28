@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable;
+namespace UdHuong\Mediable;
 
 use CreateMediableTables;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
-use Plank\Mediable\Commands\ImportMediaCommand;
-use Plank\Mediable\Commands\PruneMediaCommand;
-use Plank\Mediable\Commands\SyncMediaCommand;
-use Plank\Mediable\SourceAdapters\SourceAdapterFactory;
-use Plank\Mediable\UrlGenerators\UrlGeneratorFactory;
+use UdHuong\Mediable\Commands\ImportMediaCommand;
+use UdHuong\Mediable\Commands\PruneMediaCommand;
+use UdHuong\Mediable\Commands\SyncMediaCommand;
+use UdHuong\Mediable\SourceAdapters\SourceAdapterFactory;
+use UdHuong\Mediable\UrlGenerators\UrlGeneratorFactory;
 
 /**
  * Mediable Service Provider.

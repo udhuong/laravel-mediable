@@ -1,6 +1,6 @@
 <?php
 
-use Plank\Mediable\HandlesMediaUploadExceptions;
+use UdHuong\Mediable\HandlesMediaUploadExceptions;
 
 class SampleExceptionHandler
 {

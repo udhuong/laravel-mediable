@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\UrlGenerators;
+namespace UdHuong\Mediable\UrlGenerators;
 
-use Plank\Mediable\Exceptions\MediaUrlException;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Exceptions\MediaUrlException;
+use UdHuong\Mediable\Media;
 
 interface UrlGeneratorInterface
 {
     /**
      * Set the media instance for which urls are being generated.
-     * @param \Plank\Mediable\Media $media
+     * @param \UdHuong\Mediable\Media $media
      */
     public function setMedia(Media $media): void;
 

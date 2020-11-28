@@ -77,7 +77,7 @@ The `config/mediable.php` offers a number of options for configuring how media u
      * * 'error': an Exception is thrown
      *
      */
-    'on_duplicate' => Plank\Mediable\MediaUploader::ON_DUPLICATE_INCREMENT,
+    'on_duplicate' => UdHuong\Mediable\MediaUploader::ON_DUPLICATE_INCREMENT,
 
     /*
      * Reject files unless both their mime and extension are recognized and both match a single aggregate type
@@ -157,9 +157,9 @@ The ``config/mediable.php`` file lets you specify a number of classes to be use 
     /*
      * FQCN of the model to use for media
      *
-     * Should extend Plank\Mediable\Media::class
+     * Should extend UdHuong\Mediable\Media::class
      */
-    'model' => Plank\Mediable\Media::class,
+    'model' => UdHuong\Mediable\Media::class,
 
     /*
      * List of adapters to use for various source inputs
@@ -168,13 +168,13 @@ The ``config/mediable.php`` file lets you specify a number of classes to be use 
      */
     'source_adapters' => [
         'class' => [
-            Symfony\Component\HttpFoundation\File\UploadedFile::class => Plank\Mediable\SourceAdapters\UploadedFileAdapter::class,
-            Symfony\Component\HttpFoundation\File\File::class => Plank\Mediable\SourceAdapters\FileAdapter::class,
-            Psr\Http\Message\StreamInterface::class => Plank\Mediable\SourceAdapters\StreamAdapter::class,
+            Symfony\Component\HttpFoundation\File\UploadedFile::class => UdHuong\Mediable\SourceAdapters\UploadedFileAdapter::class,
+            Symfony\Component\HttpFoundation\File\File::class => UdHuong\Mediable\SourceAdapters\FileAdapter::class,
+            Psr\Http\Message\StreamInterface::class => UdHuong\Mediable\SourceAdapters\StreamAdapter::class,
         ],
         'pattern' => [
-            '^https?://' => Plank\Mediable\SourceAdapters\RemoteUrlAdapter::class,
-            '^/' => Plank\Mediable\SourceAdapters\LocalPathAdapter::class
+            '^https?://' => UdHuong\Mediable\SourceAdapters\RemoteUrlAdapter::class,
+            '^/' => UdHuong\Mediable\SourceAdapters\LocalPathAdapter::class
         ],
     ],
 
@@ -182,6 +182,6 @@ The ``config/mediable.php`` file lets you specify a number of classes to be use 
      * List of URL Generators to use for handling various filesystem disks
      */
     'url_generators' => [
-        'local' => Plank\Mediable\UrlGenerators\LocalUrlGenerator::class,
-        's3' => Plank\Mediable\UrlGenerators\S3UrlGenerator::class,
+        'local' => UdHuong\Mediable\UrlGenerators\LocalUrlGenerator::class,
+        's3' => UdHuong\Mediable\UrlGenerators\S3UrlGenerator::class,
     ],

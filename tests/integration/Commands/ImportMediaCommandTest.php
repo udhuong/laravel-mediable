@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Contracts\Console\Kernel as Artisan;
-use Plank\Mediable\Commands\ImportMediaCommand;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Commands\ImportMediaCommand;
+use UdHuong\Mediable\Media;
 
 class ImportMediaCommandTest extends TestCase
 {
@@ -66,7 +66,7 @@ class ImportMediaCommandTest extends TestCase
     {
         $artisan = $this->getArtisan();
         $filesystem = app(\Illuminate\Filesystem\FilesystemManager::class);
-        /** @var \Plank\Mediable\MediaUploader $uploader */
+        /** @var \UdHuong\Mediable\MediaUploader $uploader */
         $uploader = app('mediable.uploader');
         $uploader->setAllowUnrecognizedTypes(false);
         $uploader->setAllowedAggregateTypes(['image']);

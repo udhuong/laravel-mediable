@@ -4,9 +4,9 @@ return [
     /*
      * FQCN of the model to use for media
      *
-     * Should extend `Plank\Mediable\Media`
+     * Should extend `UdHuong\Mediable\Media`
      */
-    'model' => Plank\Mediable\Media::class,
+    'model' => UdHuong\Mediable\Media::class,
 
     /*
      * Name to be used for mediables joining table
@@ -41,7 +41,7 @@ return [
      * * `'replace'` : the old file and media model is deleted
      * * `'error'`: an Exception is thrown
      */
-    'on_duplicate' => Plank\Mediable\MediaUploader::ON_DUPLICATE_INCREMENT,
+    'on_duplicate' => UdHuong\Mediable\MediaUploader::ON_DUPLICATE_INCREMENT,
 
     /*
      * Reject files unless both their mime and extension are recognized and both match a single aggregate type
@@ -76,7 +76,7 @@ return [
      * that should be recognized for the type
      */
     'aggregate_types' => [
-        Plank\Mediable\Media::TYPE_IMAGE => [
+        UdHuong\Mediable\Media::TYPE_IMAGE => [
             'mime_types' => [
                 'image/jpeg',
                 'image/png',
@@ -89,7 +89,7 @@ return [
                 'gif',
             ]
         ],
-        Plank\Mediable\Media::TYPE_IMAGE_VECTOR => [
+        UdHuong\Mediable\Media::TYPE_IMAGE_VECTOR => [
             'mime_types' => [
                 'image/svg+xml',
             ],
@@ -97,7 +97,7 @@ return [
                 'svg',
             ]
         ],
-        Plank\Mediable\Media::TYPE_PDF => [
+        UdHuong\Mediable\Media::TYPE_PDF => [
             'mime_types' => [
                 'application/pdf',
             ],
@@ -105,7 +105,7 @@ return [
                 'pdf',
             ]
         ],
-        Plank\Mediable\Media::TYPE_AUDIO => [
+        UdHuong\Mediable\Media::TYPE_AUDIO => [
             'mime_types' => [
                 'audio/aac',
                 'audio/ogg',
@@ -122,7 +122,7 @@ return [
                 'wav',
             ]
         ],
-        Plank\Mediable\Media::TYPE_VIDEO => [
+        UdHuong\Mediable\Media::TYPE_VIDEO => [
             'mime_types' => [
                 'video/mp4',
                 'video/mpeg',
@@ -137,7 +137,7 @@ return [
                 'webm'
             ]
         ],
-        Plank\Mediable\Media::TYPE_ARCHIVE => [
+        UdHuong\Mediable\Media::TYPE_ARCHIVE => [
             'mime_types' => [
                 'application/zip',
                 'application/x-compressed-zip',
@@ -147,7 +147,7 @@ return [
                 'zip',
             ]
         ],
-        Plank\Mediable\Media::TYPE_DOCUMENT => [
+        UdHuong\Mediable\Media::TYPE_DOCUMENT => [
             'mime_types' => [
                 'text/plain',
                 'application/plain',
@@ -166,7 +166,7 @@ return [
                 'json',
             ]
         ],
-        Plank\Mediable\Media::TYPE_SPREADSHEET => [
+        UdHuong\Mediable\Media::TYPE_SPREADSHEET => [
             'mime_types' => [
                 'application/vnd.ms-excel',
                 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
@@ -176,7 +176,7 @@ return [
                 'xlsx',
             ]
         ],
-        Plank\Mediable\Media::TYPE_PRESENTATION => [
+        UdHuong\Mediable\Media::TYPE_PRESENTATION => [
             'mime_types' =>
                 [
                     'application/vnd.ms-powerpoint',
@@ -199,14 +199,14 @@ return [
      */
     'source_adapters' => [
         'class' => [
-            Symfony\Component\HttpFoundation\File\UploadedFile::class => Plank\Mediable\SourceAdapters\UploadedFileAdapter::class,
-            Symfony\Component\HttpFoundation\File\File::class => Plank\Mediable\SourceAdapters\FileAdapter::class,
-            Psr\Http\Message\StreamInterface::class => Plank\Mediable\SourceAdapters\StreamAdapter::class,
+            Symfony\Component\HttpFoundation\File\UploadedFile::class => UdHuong\Mediable\SourceAdapters\UploadedFileAdapter::class,
+            Symfony\Component\HttpFoundation\File\File::class => UdHuong\Mediable\SourceAdapters\FileAdapter::class,
+            Psr\Http\Message\StreamInterface::class => UdHuong\Mediable\SourceAdapters\StreamAdapter::class,
         ],
         'pattern' => [
-            '^https?://' => Plank\Mediable\SourceAdapters\RemoteUrlAdapter::class,
-            '^/' => Plank\Mediable\SourceAdapters\LocalPathAdapter::class,
-            '^[a-zA-Z]:\\\\' => Plank\Mediable\SourceAdapters\LocalPathAdapter::class
+            '^https?://' => UdHuong\Mediable\SourceAdapters\RemoteUrlAdapter::class,
+            '^/' => UdHuong\Mediable\SourceAdapters\LocalPathAdapter::class,
+            '^[a-zA-Z]:\\\\' => UdHuong\Mediable\SourceAdapters\LocalPathAdapter::class
         ],
     ],
 
@@ -215,8 +215,8 @@ return [
      *
      */
     'url_generators' => [
-        'local' => Plank\Mediable\UrlGenerators\LocalUrlGenerator::class,
-        's3' => Plank\Mediable\UrlGenerators\S3UrlGenerator::class,
+        'local' => UdHuong\Mediable\UrlGenerators\LocalUrlGenerator::class,
+        's3' => UdHuong\Mediable\UrlGenerators\S3UrlGenerator::class,
     ],
 
     /**

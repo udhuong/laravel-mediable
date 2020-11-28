@@ -1,20 +1,20 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Exceptions\MediaUpload;
+namespace UdHuong\Mediable\Exceptions\MediaUpload;
 
-use Plank\Mediable\Exceptions\MediaUploadException;
+use UdHuong\Mediable\Exceptions\MediaUploadException;
 
 class ConfigurationException extends MediaUploadException
 {
     public static function cannotSetAdapter(string $class): self
     {
-        return new static("Could not set adapter of class `{$class}`. Must implement `\Plank\Mediable\SourceAdapters\SourceAdapterInterface`.");
+        return new static("Could not set adapter of class `{$class}`. Must implement `\UdHuong\Mediable\SourceAdapters\SourceAdapterInterface`.");
     }
 
     public static function cannotSetModel(string $class): self
     {
-        return new static("Could not set `{$class}` as Media model class. Must extend `\Plank\Mediable\Media`.");
+        return new static("Could not set `{$class}` as Media model class. Must extend `\UdHuong\Mediable\Media`.");
     }
 
     public static function noSourceProvided(): self

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Exceptions;
+namespace UdHuong\Mediable\Exceptions;
 
 use Exception;
 

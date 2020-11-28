@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
-use Plank\Mediable\Media;
-use Plank\Mediable\MediableCollection;
+use UdHuong\Mediable\Media;
+use UdHuong\Mediable\MediableCollection;
 
 class MediableTest extends TestCase
 {

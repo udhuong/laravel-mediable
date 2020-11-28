@@ -5,36 +5,36 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <title>Configuration &mdash; Laravel-Mediable 2.2.0 documentation</title>
-  
 
-  
-  
 
-  
 
-  
-  
-    
 
-  
 
-  
-  
+
+
+
+
+
+
+
+
+
+
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
 
-  
 
-  
+
+
+
     <link rel="top" title="Laravel-Mediable 2.2.0 documentation" href="index.html"/>
         <link rel="next" title="Uploading Files" href="uploader.html"/>
-        <link rel="prev" title="Installation" href="installation.html"/> 
+        <link rel="prev" title="Installation" href="installation.html"/>
 
-  
+
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
@@ -43,29 +43,29 @@
 
   <div class="wy-grid-for-nav">
 
-    
+
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
-          
 
-          
+
+
             <a href="index.html" class="icon icon-home"> Laravel-Mediable
-          
 
-          
+
+
           </a>
 
-          
-            
-            
+
+
+
               <div class="version">
                 2.2.0
               </div>
-            
-          
 
-          
+
+
+
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -74,13 +74,13 @@
   </form>
 </div>
 
-          
+
         </div>
 
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
+
+
+
                 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
@@ -104,48 +104,48 @@
 <li class="toctree-l1"><a class="reference internal" href="commands.html">Artisan Commands</a></li>
 </ul>
 
-            
-          
+
+
         </div>
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
-      
+
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
         <a href="index.html">Laravel-Mediable</a>
       </nav>
 
 
-      
+
       <div class="wy-nav-content">
         <div class="rst-content">
-          
 
- 
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
-      
+
     <li>Configuration</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
+
+
             <a href="_sources/configuration.txt" rel="nofollow"> View page source</a>
-          
-        
+
+
       </li>
   </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+
   <div class="section" id="configuration">
 <h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="disks">
@@ -213,7 +213,7 @@
 
 <span class="c1">//...</span>
 
-<span class="nv">$media</span><span class="o">-&gt;</span><span class="na">getUrl</span><span class="p">();</span> <span class="c1">// Throws a Plank\Mediable\Exceptions\MediableUrlException</span>
+<span class="nv">$media</span><span class="o">-&gt;</span><span class="na">getUrl</span><span class="p">();</span> <span class="c1">// Throws a UdHuong\Mediable\Exceptions\MediableUrlException</span>
 </pre></div>
 </div>
 <p>If you are using symbolic links to make local disks accessible, you can instruct the package to generate URLs with the <code class="docutils literal"><span class="pre">'visibility'</span> <span class="pre">=&gt;</span> <span class="pre">'public'</span></code> key. By default, the package will assume that the symlink is named <code class="docutils literal"><span class="pre">'storage'</span></code>, as per <a class="reference external" href="https://laravel.com/docs/5.3/filesystem#the-public-disk">laravel&#8217;s documentation</a>. This can be modified with the <code class="docutils literal"><span class="pre">'prefix'</span></code> key.</p>
@@ -271,7 +271,7 @@
 <span class="cm"> * * &#39;error&#39;: an Exception is thrown</span>
 <span class="cm"> *</span>
 <span class="cm"> */</span>
-<span class="s1">&#39;on_duplicate&#39;</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\MediaUploader</span><span class="o">::</span><span class="na">ON_DUPLICATE_INCREMENT</span><span class="p">,</span>
+<span class="s1">&#39;on_duplicate&#39;</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\MediaUploader</span><span class="o">::</span><span class="na">ON_DUPLICATE_INCREMENT</span><span class="p">,</span>
 
 <span class="cm">/*</span>
 <span class="cm"> * Reject files unless both their mime and extension are recognized and both match a single aggregate type</span>
@@ -340,9 +340,9 @@
 <span class="cm">/*</span>
 <span class="cm"> * FQCN of the model to use for media</span>
 <span class="cm"> *</span>
-<span class="cm"> * Should extend Plank\Mediable\Media::class</span>
+<span class="cm"> * Should extend UdHuong\Mediable\Media::class</span>
 <span class="cm"> */</span>
-<span class="s1">&#39;model&#39;</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\Media</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+<span class="s1">&#39;model&#39;</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\Media</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
 
 <span class="cm">/*</span>
 <span class="cm"> * List of adapters to use for various source inputs</span>
@@ -351,12 +351,12 @@
 <span class="cm"> */</span>
 <span class="s1">&#39;source_adapters&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
     <span class="s1">&#39;class&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
-        <span class="nx">Symfony\Component\HttpFoundation\File\UploadedFile</span><span class="o">::</span><span class="na">class</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\SourceAdapters\UploadedFileAdapter</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
-        <span class="nx">Symfony\Component\HttpFoundation\File\File</span><span class="o">::</span><span class="na">class</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\SourceAdapters\FileAdapter</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+        <span class="nx">Symfony\Component\HttpFoundation\File\UploadedFile</span><span class="o">::</span><span class="na">class</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\SourceAdapters\UploadedFileAdapter</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+        <span class="nx">Symfony\Component\HttpFoundation\File\File</span><span class="o">::</span><span class="na">class</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\SourceAdapters\FileAdapter</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
     <span class="p">],</span>
     <span class="s1">&#39;pattern&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
-        <span class="s1">&#39;^https?://&#39;</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\SourceAdapters\RemoteUrlAdapter</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
-        <span class="s1">&#39;^/&#39;</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\SourceAdapters\LocalPathAdapter</span><span class="o">::</span><span class="na">class</span>
+        <span class="s1">&#39;^https?://&#39;</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\SourceAdapters\RemoteUrlAdapter</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+        <span class="s1">&#39;^/&#39;</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\SourceAdapters\LocalPathAdapter</span><span class="o">::</span><span class="na">class</span>
     <span class="p">],</span>
 <span class="p">],</span>
 
@@ -364,8 +364,8 @@
 <span class="cm"> * List of URL Generators to use for handling various filesystem disks</span>
 <span class="cm"> */</span>
 <span class="s1">&#39;url_generators&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
-    <span class="s1">&#39;local&#39;</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\UrlGenerators\LocalUrlGenerator</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
-    <span class="s1">&#39;s3&#39;</span> <span class="o">=&gt;</span> <span class="nx">Plank\Mediable\UrlGenerators\S3UrlGenerator</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+    <span class="s1">&#39;local&#39;</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\UrlGenerators\LocalUrlGenerator</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
+    <span class="s1">&#39;s3&#39;</span> <span class="o">=&gt;</span> <span class="nx">UdHuong\Mediable\UrlGenerators\S3UrlGenerator</span><span class="o">::</span><span class="na">class</span><span class="p">,</span>
 <span class="p">],</span>
 </pre></div>
 </div>
@@ -376,16 +376,16 @@
            </div>
           </div>
           <footer>
-  
+
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+
         <a href="uploader.html" class="btn btn-neutral float-right" title="Uploading Files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
+
+
         <a href="installation.html" class="btn btn-neutral" title="Installation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+
     </div>
-  
+
 
   <hr/>
 
@@ -395,7 +395,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 
 </footer>
 
@@ -405,10 +405,10 @@
     </section>
 
   </div>
-  
 
 
-  
+
+
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
@@ -423,21 +423,21 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
 
-  
 
-  
-  
+
+
+
     <script type="text/javascript" src="_static/js/theme.js"></script>
-  
 
-  
-  
+
+
+
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-   
+
 
 </body>
 </html>

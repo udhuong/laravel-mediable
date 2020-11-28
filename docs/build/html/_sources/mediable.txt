@@ -12,7 +12,7 @@ Add the ``Mediable`` trait to any Eloquent models that you would like to be able
     namespace App;
 
     use Illuminate\Database\Eloquent\Model;
-    use Plank\Mediable\Mediable;
+    use UdHuong\Mediable\Mediable;
 
     class Post extends Model
     {
@@ -35,7 +35,7 @@ You can attach media to your ``Mediable`` model using the ``attachMedia()`` meth
 You can attach multiple media to the same tag with a single call. The ``attachMedia()`` method accept any of the following for its first parameter:
 
 - a numeric or string id
-- an instance of ``\Plank\Mediable\Media``
+- an instance of ``\UdHuong\Mediable\Media``
 - an array of ids
 - an instance of ``\Illuminate\Database\Eloquent\Collection``
 

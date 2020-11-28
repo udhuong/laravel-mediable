@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable;
+namespace UdHuong\Mediable;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Filesystem\Filesystem;
@@ -10,9 +10,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Plank\Mediable\Exceptions\MediaUrlException;
-use Plank\Mediable\Helpers\File;
-use Plank\Mediable\UrlGenerators\UrlGeneratorInterface;
+use UdHuong\Mediable\Exceptions\MediaUrlException;
+use UdHuong\Mediable\Helpers\File;
+use UdHuong\Mediable\UrlGenerators\UrlGeneratorInterface;
 
 /**
  * Media Model.

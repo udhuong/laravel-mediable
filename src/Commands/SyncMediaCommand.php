@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Commands;
+namespace UdHuong\Mediable\Commands;
 
 use Illuminate\Console\Command;
 

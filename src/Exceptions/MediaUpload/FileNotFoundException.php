@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\Exceptions\MediaUpload;
+namespace UdHuong\Mediable\Exceptions\MediaUpload;
 
-use Plank\Mediable\Exceptions\MediaUploadException;
+use UdHuong\Mediable\Exceptions\MediaUploadException;
 
 class FileNotFoundException extends MediaUploadException
 {

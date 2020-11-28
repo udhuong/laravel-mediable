@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Plank\Mediable\UrlGenerators;
+namespace UdHuong\Mediable\UrlGenerators;
 
-use Plank\Mediable\Exceptions\MediaUrlException;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Exceptions\MediaUrlException;
+use UdHuong\Mediable\Media;
 
 class UrlGeneratorFactory
 {

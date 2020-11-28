@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Plank\Mediable\Media;
+use UdHuong\Mediable\Media;
 
 class MediaSoftDelete extends Media
 {

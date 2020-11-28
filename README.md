@@ -51,7 +51,7 @@ Register the package's service provider in `config/app.php`. In Laravel versions
 ```php
 'providers' => [
     ...
-    Plank\Mediable\MediableServiceProvider::class,
+    UdHuong\Mediable\MediableServiceProvider::class,
     ...
 ];
 ```
@@ -61,7 +61,7 @@ The package comes with a Facade for the image uploader, which you can optionally
 ```php
 'aliases' => [
 	...
-    'MediaUploader' => Plank\Mediable\MediaUploaderFacade::class,
+    'MediaUploader' => UdHuong\Mediable\MediaUploaderFacade::class,
     ...
 ]
 ```
@@ -69,7 +69,7 @@ The package comes with a Facade for the image uploader, which you can optionally
 Publish the config file (`config/mediable.php`) and migration file (`database/migrations/####_##_##_######_create_mediable_tables.php`) of the package using artisan.
 
 ```bash
-php artisan vendor:publish --provider="Plank\Mediable\MediableServiceProvider"
+php artisan vendor:publish --provider="UdHuong\Mediable\MediableServiceProvider"
 ```
 
 Run the migrations to add the required tables to your database.

@@ -33,7 +33,7 @@ class CreateMediableTestTables extends Migration
             $table->string('tag');
             $table->integer('order')->unsigned();
 
-            $table->primary(['media_id', 'mediable_type', 'mediable_id', 'tag']);
+            $table->primary(['media_id', 'mediable_type', 'mediable_id', 'tag'], 'media_id_mediable_type_mediable_id_tag_primary');
             $table->index(['mediable_id', 'mediable_type']);
             $table->index('tag');
             $table->index('order');

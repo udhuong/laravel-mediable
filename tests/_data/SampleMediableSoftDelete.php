@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Plank\Mediable\Mediable;
+use UdHuong\Mediable\Mediable;
 
 class SampleMediableSoftDelete extends Model
 {

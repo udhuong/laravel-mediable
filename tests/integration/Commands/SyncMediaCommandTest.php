@@ -1,6 +1,6 @@
 <?php
 
-use Plank\Mediable\Commands\SyncMediaCommand;
+use UdHuong\Mediable\Commands\SyncMediaCommand;
 
 class SyncMediaCommandTest extends TestCase
 {
