@@ -5,6 +5,7 @@ namespace UdHuong\Mediable;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Filesystem\FilesystemManager;
+use Illuminate\Support\Facades\Storage;
 use UdHuong\Mediable\Exceptions\MediaUpload\ConfigurationException;
 use UdHuong\Mediable\Exceptions\MediaUpload\FileExistsException;
 use UdHuong\Mediable\Exceptions\MediaUpload\FileNotFoundException;
@@ -211,9 +212,10 @@ class MediaUploader
     : self
     {
         $path = date('Y') . '/' . date('m') . '/' . date('d');
-        if (!file_exists($path))
+        if (!Storage::exists($path))
         {
-            @mkdir($path, 0777, true);
+            Storage::makeDirectory($path);
+            // @mkdir($path, 0777, true);
         }
         $this->directory = $path;
 
