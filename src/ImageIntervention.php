@@ -98,6 +98,13 @@ class ImageIntervention
         return $this;
     }
 
+    public function usePathSaveCurrent()
+    {
+        $this->pathSave = $this->image->dirname;
+
+        return $this;
+    }
+
     /*
      * Resize image too large
      */
@@ -143,7 +150,7 @@ class ImageIntervention
         {
             $save = $pathSave . '/' . $key . '_' . $this->fileName;
             $this->image->backup();
-            $this->image->resize($item['width'], $item['height'], function ($constraint)
+            $this->image->resize($item['width'] ?? null, $item['height'] ?? null, function ($constraint)
             {
                 $constraint->aspectRatio();
                 $constraint->upsize();

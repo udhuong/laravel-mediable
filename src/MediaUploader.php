@@ -67,6 +67,13 @@ class MediaUploader
     private $directory = '';
 
     /**
+     * Path relative to the filesystem disk root.
+     *
+     * @var string
+     */
+    private $folder = '';
+
+    /**
      * Name of the new file.
      *
      * @var string|null
@@ -208,6 +215,13 @@ class MediaUploader
         return $this;
     }
 
+    public function toFolder(string $type)
+    {
+        $this->folder = $type;
+
+        return $this;
+    }
+
     public function toDirectoryDay()
     : self
     {
@@ -218,6 +232,10 @@ class MediaUploader
             // @mkdir($path, 0777, true);
         }
         $this->directory = $path;
+        if ($this->folder)
+        {
+            $this->directory = $this->folder . '/' . $this->directory;
+        }
 
         return $this;
     }
